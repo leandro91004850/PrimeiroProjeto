@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
     public void sortearNumero(View view){
         TextView textoResultado = (TextView) findViewById(R.id.textoResultado);
             int numero = new Random().nextInt(11);
-        textoResultado.setText("O número selecionado é: "+ numero);
+            int somando12 = numero + 12;
+        textoResultado.setText("O número selecionado é: "+ numero+ "\n e a soma mais 12 é " + somando12);
     }
 
 }
